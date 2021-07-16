@@ -50,6 +50,9 @@
     text-align: center;
     padding: 3vh 14vw;
   }
+  .slider-img {
+    width: 100%;
+  }
   /* USABILITY SECTION END */
 
   /* TAG BUTTONS START */
@@ -199,6 +202,7 @@
     text-align: right;
     padding: 1vh 5vw;
   }
+
   /* USABILITY SECTION END */
 
   /* TAG BUTTONS START */
@@ -322,8 +326,8 @@
 
   /* USABILITY SECTION START */
   .swiper-container {
-    width: 60vw;
-    height: 53vh;
+    width: 100vw;
+    height: 60vh;
   }
   .swiper-slide {
     justify-content: space-between;
@@ -331,8 +335,13 @@
   }
   .swiper-slide-text {
     text-align: right;
-    align-self: flex-start;
+    padding: 1vh 5vw;
   }
+  .slider-img {
+    width: 50vw;
+    height: 57vh;
+  }
+
   /* USABILITY SECTION END */
 
   /* TAG BUTTONS START */
