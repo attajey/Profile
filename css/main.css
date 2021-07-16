@@ -3,13 +3,15 @@
     padding: 3vh 3vw;
   }
   .logo-container img {
-    width: 35vw;
-    height: 4vh;
+    width: 100%;
   }
 
   /* INTRO SECTION START */
   .container-intro {
     flex-direction: column;
+  }
+  .container-intro img {
+    width: 100%;
   }
   .intro p {
     text-align: center;
@@ -80,9 +82,7 @@
     justify-content: center;
   }
   .container-download img {
-    width: 88vw;
-    height: 66vh;
-    border-radius: 20px;
+    width: 100%;
   }
   .download-section p h1 {
     padding-right: 10vw;
@@ -104,8 +104,7 @@
   }
   .container-end img {
     padding-top: 6vh;
-    width: 88vw;
-    height: 58vh;
+    width: 100%;
   }
   .end-section {
     flex-basis: 100%;
@@ -147,13 +146,12 @@
   /* FOOTER SECTION END */
 }
 
-@media all and (max-width: 768px) and (min-width: 377px) {
+@media all and (max-width: 768px) and (min-width: 376px) {
   header {
     padding: 3vh 3vw;
   }
   .logo-container img {
-    width: 22vw;
-    height: 5vh;
+    width: 50%;
   }
 
   /* INTRO SECTION START */
@@ -161,8 +159,7 @@
     flex-direction: row;
   }
   .container-intro img {
-    height: 37vh;
-    width: 45vw;
+    width: 50%;
   }
   .intro p {
     width: 80%;
@@ -233,14 +230,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: nowrap;
   }
   .BtnPrimary-download {
     width: 65%;
   }
   .container-download img {
-    width: 50vw;
-    height: 80vh;
-    border-radius: 20px;
+    width: 30%;
   }
   /* DOWNLOAD APPLICATION SECTION END */
 
@@ -252,12 +248,10 @@
     align-items: flex-start;
   }
   .container-end img {
-    width: 40vw;
-    height: 75vh;
+    width: 50%;
   }
   .container-end h1 {
     font-size: 30px;
-    width: max-content;
   }
   .end-section {
     flex-basis: 50%;
@@ -277,7 +271,7 @@
   }
   .container-footer {
     flex-direction: row-reverse;
-    padding: 30px 100px;
+    padding: 3vh 10vw;
     text-align: right;
     height: max-content;
   }
@@ -296,16 +290,14 @@
     padding: 3vh 13vw;
   }
   .logo-container img {
-    width: 9vw;
-    height: 4vh;
+    width: 30%;
   }
   /* INTRO SECTION START */
   .container-intro {
     flex-direction: row;
   }
   .container-intro img {
-    height: 58vh;
-    width: 36vw;
+    width: 40%;
   }
   .intro p {
     width: 50%;
@@ -372,12 +364,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: nowrap;
   }
   .BtnPrimary-download {
     width: 33%;
   }
   .container-download img {
-    border-radius: 20px;
+    width: 30%;
   }
   /* DOWNLOAD APPLICATION SECTION END */
 
@@ -391,6 +384,9 @@
   .container-end p {
     align-self: center;
   }
+  .container-end img {
+    width: 30%;
+  }
   .end-section {
     flex-basis: 50%;
     display: flex;
@@ -403,9 +399,8 @@
   /* FOOTER SECTION START */
   .container-footer {
     flex-direction: row-reverse;
-    padding: 30px 100px;
+    padding: 3vh 10vw;
     text-align: right;
-    height: max-content;
   }
   .container-end button {
     align-self: center;
@@ -433,7 +428,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .BtnPrimary {
   padding: 5px 20px;
@@ -450,6 +445,26 @@ header {
   text-align: center;
   color: white;
   cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.BtnPrimary-darkmode {
+  border-radius: 19px;
+  background-color: #4186fa;
+  border-color: transparent;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.BtnPrimary-darkmode:hover {
+  background-color: black;
+  color: wheat;
 }
 .BtnPrimary:hover,
 .BtnPrimary-download:hover {
@@ -470,6 +485,7 @@ header {
   text-align: center;
   color: #4186fa;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 .BtnSecondary:hover {
   background-color: #1c5cc9;
@@ -477,6 +493,12 @@ header {
 }
 .logo-container {
   cursor: pointer;
+  align-self: center;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 /* INTRO SECTION START */
@@ -501,6 +523,7 @@ header {
 }
 .intro h1 {
   align-self: center;
+  text-align: center;
 }
 .intro button {
   align-self: center;
@@ -546,7 +569,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 32vw;
-  height: 36vh;
+  height: max-content;
   padding: 2vh 1vw;
   transition: box-shadow 0.2s ease-out;
   border-radius: 20px;
@@ -567,6 +590,7 @@ header {
   border-radius: 149px;
   padding: 2vh 5vw;
 }
+
 .swiper-slide {
   display: flex;
 }
@@ -622,9 +646,14 @@ header {
   align-items: flex-end;
   text-align: right;
 }
+.container-download img {
+  border-radius: 20px;
+}
 .container-download ul {
-  list-style: none;
-  width: max-content;
+  list-style-position: inside;
+  text-align: right;
+  direction: rtl;
+  padding-right: 0px;
 }
 .container-download li:first-child {
   font-weight: bold;
@@ -657,6 +686,9 @@ header {
 /* REGISTER END SECTION START */
 .container-end {
   display: flex;
+}
+.container-end img {
+  border-radius: 20px;
 }
 .container-end a {
   text-decoration: none;
@@ -694,10 +726,6 @@ footer {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-}
-.column:last-child {
-  flex-grow: 1;
-  justify-self: center;
 }
 .footer-logo {
   width: 155px;
